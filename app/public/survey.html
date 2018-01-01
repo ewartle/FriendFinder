@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" align="center">
+            <h1><span><img src="logo.png"></span> Friend Finder </h1>
+            <hr>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title"><strong>Survey Questions</strong></h1>
+            </div>
+            <div class="panel-body" id="well-section2">
+                <form role="form" class="form" name="myForm" required>
+                    <div class="form-group">
+                        <h4> About you </h4>
+                        <label for="exampleInputname">Name (Required) </label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputLink">Link to photo (Required)</label>
+                        <input type="text" class="form-control" id="link" required>
+                    </div>
+                    <h4> Question 1 </h4>
+                    <h5>Your mind is always buzzing with unexplored ideas and plans. </h5>
+                    <div class="input-group">
+                        <select class="form-control" class="form-control1" id="answer1" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <h4> Question 2 </h4>
+                    <h5>Generally speaking, you rely more on your experience than your imagination. </h5>
+                    <div class="input-group">
+                        <select class="form-control" class="form-control1" id="answer2" required>
+                            <option value="" >Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <h4> Question 3 </h4>
+                    <h5>You love to learn new things. </h5>
+                    <div class="input-group">
+                        <select class="form-control" class="form-control1" id="answer3" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <h4> Question 4 </h4>
+                    <h5>You enjoy traveling to new places. </h5>
+                    <div class="input-group">
+                        <select class="form-control" class="form-control1" id="answer4" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <h4> Question 5 </h4>
+                    <h5>You like to read. </h5>
+                    <div class="input-group">
+                        <select class="form-control" class="form-control1" id="answer5" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <h4> Question 6 </h4>
+                    <h5>You would rather a quite dinner instead of a crowded party. </h5>
+                    <div class="input-group">
+                        <select class="form-control" class="form-control1" id="answer6" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <h4> Question 7 </h4>
+                    <h5>You prefer order to chaos. </h5>
+                    <div class="input-group">
+                        <select class="form-control" class="form-control1" id="answer7" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <h4> Question 8 </h4>
+                    <h5>You make decisions based on logic, not intuition. </h5>
+                    <div class="input-group">
+                        <select class="form-control" class="form-control1" id="answer8" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <h4> Question 9 </h4>
+                    <h5>You generally have an optimistic view of life. </h5>
+                    <div class="input-group">
+                        <select class="form-control" class="form-control1" id="answer9" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                    <h4> Question 10 </h4>
+                    <h5>You like to spend time in nature. </h5>
+                    <div class="input-group">
+                        <select class="form-control" class="form-control1" id="answer10" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </form>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="add-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" class="modalClose" data-dismiss="modal" aria-hidden="true"> X </button>
+                        <h4 class="modal-title" id="myModalLabel">Your Best Match</h4>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" class="modalClose" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="/">Home</a> | <a href="/api/friends"> API Friends List </a> | <a href="https://github.com/ewartle/FriendFinder"> GitHub Repo </a>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#add-btn").on("click", function(event) {
+            event.preventDefault();
+
+            if ($("#name").val().trim() === "" || $("#link").val().trim() === "") {
+
+                var required1 = true;
+
+            }
+
+            if ($("#answer1").val() === "" || $("#answer2").val() === "" || $("#answer3").val() === "" || $("#answer4").val() === "" || $("#answer5").val() === "" || $("#answer6").val() === "" || $("#answer7").val() === "" || $("#answer8").val() === "" || $("#answer9").val() === "" || $("#answer10").val() === "") {
+                var required2 = true;
+            }
+
+
+            if (required1 || required2) {
+                $("#myModal").modal();
+                $(".modal-body").empty();
+                $(".modal-body").append("You must answer every question.");
+
+            } else {
+
+                var surveyData = {
+                    name: $("#name").val().trim(),
+                    photo: $("#link").val().trim(),
+                    scores: [parseFloat($("#answer1").val().trim()),
+                        parseFloat($("#answer2").val().trim()), parseFloat($("#answer3").val().trim()), parseFloat($("#answer4").val().trim()), parseFloat($("#answer5").val().trim()), parseFloat($("#answer6").val().trim()), parseFloat($("#answer7").val().trim()), parseFloat($("#answer8").val().trim()), parseFloat($("#answer9").val().trim()), parseFloat($("#answer10").val().trim())
+                    ]
+                };
+
+                $.post("/api/friends", surveyData)
+                    .done(function(data) {
+                        console.log(data);
+                        console.log(data.matchName);
+                        console.log(data.matchImage);
+                        var image = $("<img src = " + data.matchImage + " alt = 'picture of new friend'>");
+                        var results = ("Your new friend is " + data.matchName + ".");
+                        var space = $("<div> \n\n\n </div>");
+
+                        $("#myModal").modal();
+                        $(".modal-body").empty();
+                        $(".modal-body").append(results);
+                        $(".modal-body").append(space);
+                        $(".modal-body").append(image);
+                        $(".form").trigger("reset");
+
+
+                    });
+            }
+
+
+        });
+
+    });
+    </script>
+    <style>
+    input:invalid {
+        border: 2px dashed red;
+    }
+
+    input:valid {
+        border: 2px solid black;
+    }
+
+    label.error {
+        color: red;
+        font-family: verdana, Helvetica;
+    }
+    </style>
+</body>
+
+</html>
