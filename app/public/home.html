@@ -6,26 +6,27 @@
     <title>Friend Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./stylehome.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-    <body>
+    <body background=friends.JPEG>
         <div class=container>
             <div class="jumbotron" align="center">
-                <h1><span><img src="logo.png"></span> Friend Finder </h1>
+                <h1><span><img src="logo.png"></span> <strong>Friend Finder </strong></h1>
                 <hr>
-                <p>Answer a few basic questions and find the friend with the greatest compatibility!</p>
+                <p><strong>Answer a few basic questions and find the friend with the greatest compatibility!</strong></p>
                 <a href="/survey">
-                    <button type="button" class="btn btn-primary btn-lg" id="view"><span class="glyphicon glyphicon-flash"></span> Go to Survey </button>
+                    <button type="button" class="btn btn-primary btn-lg" id="view"><span class="glyphicon glyphicon-flash"></span> <strong>Go to Survey </strong></button>
                 </a>
+                <br>
+                <br>
+                <a href="/api/friends"> <strong> API Friends List </a> | <a href="https://github.com/ewartle/FriendFinder"> GitHub Repo </strong></a>
             </div>
-            <a href="/api/friends"> API Friends List </a> | <a href="https://github.com/ewartle/FriendFinder"> GitHub Repo </a>
         </div>
-
-       
     </body>
 
 </html>

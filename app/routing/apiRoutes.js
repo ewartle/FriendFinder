@@ -10,12 +10,9 @@ module.exports = function(app) {
     app.post("/api/friends", function(req, res) {
 
         var surveyData = req.body
+        console.log(req.body);
        
         var surveyDataScores = surveyData.scores
-
-
-        console.log(surveyDataScores);
-
 
         var matchName = '';
         var matchImage = '';
@@ -24,8 +21,8 @@ module.exports = function(app) {
         for (var i = 0; i < friends.length; i++) {
             
             var diff = 0;
-            for (var j = 0; j < surveyDataScores.length; j++) {
-                diff += Math.abs(friends[i].scores[j] - surveyDataScores[j]);
+            for (var d = 0; d < surveyDataScores.length; d++) {
+                diff += Math.abs(friends[i].scores[d] - surveyDataScores[d]);
             }
             console.log('diff = ' + diff);
 
@@ -37,27 +34,18 @@ module.exports = function(app) {
             }
         }
 
-
         friends.push(surveyData);
-        return res.json({ status: 'OK', matchName: matchName, matchImage: matchImage })
-       
+        return res.json({ matchName: matchName, matchImage: matchImage })
     });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    app.post("/api/random", function(req, res) {
+       
+        var random = Math.floor(Math.random() * (friends.length))
+        var matchName = friends[random].name;
+        var matchImage = friends[random].photo;
+       
+        return res.json({ matchName: matchName, matchImage: matchImage })
+       
+    });
 
 };

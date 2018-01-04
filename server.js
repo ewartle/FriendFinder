@@ -9,10 +9,10 @@ var PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, './app/public')));
 
-// Add middleware for parsing incoming request bodies -- the text file is necessary to handle the scores array
+// Add middleware for parsing incoming request bodies 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
+//app.use(bodyParser.text());
 
 
 require("./app/routing/apiRoutes")(app);
