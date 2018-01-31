@@ -11,7 +11,7 @@ In order to meet your new best friend, click "go to the survey" and enter your n
 Enjoy the experience!
 
 ## Technology Overview:
-This application employs a variety of technologies, including:  HTML, CSS, JQuery, Javascript, and Bootstrap.
+This application employs a variety of technologies, including:  HTML, CSS, JQuery, Javascript, Express and Bootstrap.
 
 **This app was developed as a homework assignment with the Georgia Tech coding bootcamp.**
 
